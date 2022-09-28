@@ -1,6 +1,3 @@
-#Git Course
+Multi-Terraform workspace with matrix jobs
 
-Repositório utilizado no curso de Git do Willian Justen
-
-- Git/GitHub para iniciantes - (https://www.youtube.com/watch?v=IBClN6VpJDw&list=PLlAbYrWSYTiPA2iEiQ2PF_A9j__C4hi0A)
-- Git/GitHub além do básicão - (https://www.youtube.com/watch?v=_Why5uCCrXc&list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg)
+This example shows how to run Infracost in GitHub Actions against a Terraform project that uses multiple workspaces using parallel matrix jobs. The first job uses a matrix to generate the plan JSONs and the second job uses another matrix to generate multiple Infracost output JSON files. infracost comment command in the last job combines the Infracost JSON files and posts a single comment.
